@@ -18,8 +18,6 @@ class Math {
 
         $this->version = '1.0';
         $this->prefix = 'math';
-
-        add_action('init', array($this, 'mathAdd'));
     }
 
     /**
