@@ -2,7 +2,7 @@
 
 error_reporting(E_ALL);
 
-include '../wp-load.php';
+include '/var/www/html/wordpress/wp-load.php';
 
 
 
