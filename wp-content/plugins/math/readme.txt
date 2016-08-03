@@ -9,6 +9,6 @@ Simple Math plugin
 
 == Installation ==
 
-Upload the Math plugin to your blog, Activate it from plugins in admin section. updated new text
+Upload the Math plugin to your blog, Activate it from plugins in admin section.
 
 1, 2, 3: You're done!
