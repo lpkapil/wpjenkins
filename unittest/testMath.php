@@ -30,7 +30,7 @@ class testMath extends PHPUnit_Framework_TestCase {
     public function testMathAdd() {
         //Valid test
         $this->assertEquals((int) 5, $this->object->mathAdd(2, 3));
-        //Invalid test
+        //Invalid test commented
 //        $this->assertEquals((int) 5, $this->object->mathAdd(null, null));
     }
 
