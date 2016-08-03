@@ -1,4 +1,4 @@
-<project name="projectcommerce" default="dist" basedir=".">
+<project name="wpjenkins" default="dist" basedir=".">
 <target name="unittest" description="Run unit tests with PHPUnit">
     <exec executable="phpunit" failonerror="true">
         <arg value="-c" />
