@@ -1,2 +1,2 @@
 # wpjenkins
-Jenkins and capistrano deployment test updated
+Jenkins and deployer deployment test updated
