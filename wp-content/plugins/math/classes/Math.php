@@ -1,7 +1,6 @@
 <?php
 
 /**
- * PHP version 5
  * Main Math Class
  *
  * @category Class
