@@ -2,7 +2,9 @@
 
 /**
  * Main Math Class
- *
+ * 
+ * PHP version 5.6
+ * 
  * @category Class
  * @package  Math
  * @author   Kapil Yadav <lpkapil@gmail.com>
@@ -11,6 +13,8 @@
  * @link     https://github.com/lpkapil/wpjenkins
  */
 
+namespace Math;
+
 /**
  * Math Class Doc Comment
  *
@@ -18,7 +22,7 @@
  * @package  Math
  * @author   Kapil Yadav <lpkapil@gmail.com>
  * @license  open source
- * @version  Release: prod_1.0
+ * @version  Release: prod_1.01
  * @link     https://github.com/lpkapil/wpjenkins
  *
  */
@@ -30,7 +34,8 @@ class Math
      * 
      * @since   1.0
      */
-    private $_version, $_prefix;
+    private $_version;
+    private $_prefix;
 
     /**
      * Class constructor
@@ -47,67 +52,66 @@ class Math
     /**
      * Get Addition 
      * 
-     * @param integer $a parameter 1 
-     * @param integer $b parameter 2
+     * @param integer $num1 parameter 1 
+     * @param integer $num2 parameter 2
      * 
      * @Method mathAdd
      * @return INT32
      * @since   1.0
      */
-    public function mathAdd($a = 0, $b = 0)
+    public function mathAdd($num1 = 0, $num2 = 0)
     {
-        return $a + $b;
+        return $num1 + $num2;
     }
 
     /**
      * Get Substraction 
      * 
-     * @param integer $a parameter 1 
-     * @param integer $b parameter 2
+     * @param integer $num1 parameter 1 
+     * @param integer $num2 parameter 2
      * 
      * @Method mathSubstration
      * @return INT32
      * @since   1.0
      */
-    public function mathSubstration($a = 0, $b = 0)
+    public function mathSubstration($num1 = 0, $num2 = 0)
     {
-        return $a - $b;
+        return $num1 - $num2;
     }
 
     /**
      * Get Multiplication
      * 
-     * @param integer $a parameter 1 
-     * @param integer $b parameter 2
+     * @param integer $num1 parameter 1 
+     * @param integer $num2 parameter 2
      * 
      * @Method mathMultiply
      * @return INT32
      * @since   1.0
      */
-    public function mathMultiply($a = 0, $b = 0)
+    public function mathMultiply($num1 = 0, $num2 = 0)
     {
-        return $a * $b;
+        return $num1 * $num2;
     }
 
     /**
      * Get Devision
      * 
-     * @param integer $a parameter 1 
-     * @param integer $b parameter 2
+     * @param integer $num1 parameter 1 
+     * @param integer $num2 parameter 2
      * 
      * @Method mathDivision
      * @return INT32
      * @since   1.0
      */
-    public function mathDivision($a = 0, $b = 0)
+    public function mathDivision($num1 = 0, $num2 = 0)
     {
 
         //Devide by zero
-        if ($b == 0) {
+        if ($num2 == 0) {
             return false;
         }
 
-        return $a / $b;
+        return $num1 / $num2;
     }
-
 }

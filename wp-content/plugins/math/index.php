@@ -3,6 +3,8 @@
 /**
  * Math Plugin Main File
  * 
+ * PHP version 5.6
+ * 
  * @category Plugin
  * @package  Math
  * @author   Kapil Yadav <lpkapil@gmail.com>
@@ -17,6 +19,9 @@
  * Author: Kapil Yadav
  * Text Domain: math
  */
+
+namespace Math;
+
 if (!defined('ABSPATH')) {
     header('Status: 403 Forbidden');
     header('HTTP/1.1 403 Forbidden');
@@ -26,8 +31,3 @@ if (!defined('ABSPATH')) {
 require 'classes/Math.php';
 
 new Math();
-
-
-
-
-

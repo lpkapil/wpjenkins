@@ -1,31 +1,33 @@
 <?php
 
 /**
- * Test Math Class
- *
+ * Math Test Class
+ * 
+ * PHP version 5.6
+ * 
  * @category Class
- * @package  TestMath
+ * @package  MathTest
  * @author   Kapil Yadav <lpkapil@gmail.com>
  * @license  open source
  * @version  GIT: https://github.com/lpkapil/wpjenkins
  * @link     https://github.com/lpkapil/wpjenkins
  */
 
-require 'bootstrap.php';
+namespace Math;
 
 /**
  * Math Test Class Doc Comment
  *
  * @category Class
- * @package  TestMath
+ * @package  MathTest
  * @author   Kapil Yadav <lpkapil@gmail.com>
  * @license  open source
- * @version  Release: prod_1.0
+ * @version  Release: prod_1.01
  * @link     https://github.com/lpkapil/wpjenkins
  *
  */
 
-class TestMath extends PHPUnit_Framework_TestCase
+class MathTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -207,5 +209,4 @@ class TestMath extends PHPUnit_Framework_TestCase
             )
         );
     }
-
 }

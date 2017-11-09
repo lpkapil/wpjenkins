@@ -4,13 +4,12 @@
          convertNoticesToExceptions="true"
          convertWarningsToExceptions="true"
          processIsolation="false"
-         stopOnFailure="false"
+         stopOnFailure="true"
          syntaxCheck="false"
          verbose="true">
     <testsuites>
         <testsuite name="unittest">
-            <directory>unittest</directory>
-            <file>testMath.php</file>
+            <directory>tests</directory>
         </testsuite>
     </testsuites>
 </phpunit>

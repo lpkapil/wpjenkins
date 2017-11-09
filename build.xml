@@ -1,5 +1,45 @@
-<project name="wpjenkins" default="dist" basedir=".">
-    <target name="unittest" description="Run unit tests with PHPUnit">
+<!-- Project -->
+<project name="wpjenkins" basedir="." default="build">
+    <!-- Properties -->
+    <property name="contentdir" value="${basedir}/wp-content"/>
+    <property name="pluginsdir" value="${contentdir}/plugins"/>
+    <property name="themesdir" value="${contentdir}/themes"/>
+    <!-- Build -->
+    <target name="build" depends="phpsyntax, phpcpd, phpmd, phpunittest" />
+    <!-- PHP Syntax Checker -->
+    <target name="phpsyntax" description="Check PHP Files Syntax Errors using PHP -l">
+        <apply executable="php" failonerror="true">
+            <arg value="-l" />
+            
+            <fileset dir="${pluginsdir}">
+                <include name="**/*.php" />
+            </fileset>
+        </apply>
+    </target>
+    <!-- PHPLOC , Not used now -->
+    <target name="phploc" description="Find size and anlyse structure of code using PHPLOC">
+        <exec executable="phploc">
+            <arg path="${pluginsdir}"/>
+        </exec>
+    </target>
+    <!-- PHPCPD -->
+    <target name="phpcpd" description="Find duplicate code in plugins using PHPCPD">
+        <exec executable="phpcpd">
+            <arg path="${pluginsdir}"/>
+        </exec>
+    </target>
+    <!-- PHPMD -->
+    <target name="phpmd" description="Find mass detection using PHPMD">
+        <exec executable="phpmd">
+            <arg path="${pluginsdir}"/>
+            <arg value="text"/>
+            <arg line="cleancode,controversial,design,codesize,unusedcode,naming"/>
+            <arg value="--suffixes"/>
+            <arg value="php"/>
+        </exec>
+    </target>
+    <!-- PHPUNIT -->  
+    <target name="phpunittest" description="Runnig unit tests with PHPUnit">
         <exec executable="phpunit" failonerror="true">
             <arg value="-c" />
             <arg path="${basedir}/unittest/phpunit.xml" />
