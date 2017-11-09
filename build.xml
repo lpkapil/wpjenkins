@@ -4,14 +4,19 @@
     <property name="contentdir" value="${basedir}/wp-content"/>
     <property name="pluginsdir" value="${contentdir}/plugins"/>
     <property name="themesdir" value="${contentdir}/themes"/>
+    <property name="unittestsdir" value="${basedir}/unittest/tests"/>
     <!-- Build -->
     <target name="build" depends="phpsyntax, phpcpd, phpmd, phpunittest" />
     <!-- PHP Syntax Checker -->
     <target name="phpsyntax" description="Check PHP Files Syntax Errors using PHP -l">
         <apply executable="php" failonerror="true">
             <arg value="-l" />
-            
+            <!-- Plugin dir files -->
             <fileset dir="${pluginsdir}">
+                <include name="**/*.php" />
+            </fileset>
+            <!-- Test cases dir files -->
+            <fileset dir="${unittestsdir}">
                 <include name="**/*.php" />
             </fileset>
         </apply>
