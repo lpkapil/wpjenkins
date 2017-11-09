@@ -1,4 +1,4 @@
-<!-- Project -->
+<!-- Project Configuration File -->
 <project name="wpjenkins" basedir="." default="build">
     <!-- Properties -->
     <property name="contentdir" value="${basedir}/wp-content"/>
