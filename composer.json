@@ -1,0 +1,5 @@
+{
+    "require-dev": {
+        "deployer/recipes": "^6.2"
+    }
+}
