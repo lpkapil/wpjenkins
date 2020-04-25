@@ -13,7 +13,7 @@
  * @link     https://github.com/lpkapil/wpjenkins
  */
 
-namespace Plugin;
+namespace Math;
 
 /**
  * Math Test Class Doc Comment
