@@ -27,7 +27,7 @@ namespace Math;
  *
  */
 
-class MathTest extends \PHPUnit_Framework_TestCase
+class MathTest extends \PHPUnit\Framework\TestCase
 {
 
     /**
