@@ -46,7 +46,7 @@
     <!-- PHPUNIT -->  
     <target name="phpunittest" description="Runnig unit tests with PHPUnit">
         <exec executable="phpunit" failonerror="true">
-            <arg value="-c" />
+            <arg value="--configuration" />
             <arg path="${basedir}/unittest/phpunit.xml" />
         </exec>
     </target>
