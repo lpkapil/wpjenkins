@@ -77,7 +77,7 @@ class MathTest extends \PHPUnit\Framework\TestCase
     {
         return array(
             array(
-                2, 3, 'expected' => 6
+                2, 3, 'expected' => 5
             ),
             array(
                 7, 5, 'expected' => 12
