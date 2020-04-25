@@ -23,10 +23,10 @@
 define('DB_NAME', 'wpjenkins');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'wpjenkins');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', 'wpjenkins');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
