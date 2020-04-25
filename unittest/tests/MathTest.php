@@ -44,7 +44,7 @@ class MathTest extends \PHPUnit\Framework\TestCase
     protected function setUp()
     {
         parent::setUp();
-        $this->object = new Math\Math;
+        $this->object = new Math;
     }
 
     /**
